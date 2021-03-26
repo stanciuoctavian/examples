@@ -23,4 +23,4 @@ const service = new awsx.ecs.FargateService("nginx", {
     },
 });
 
-export let frontendURL = pulumi.interpolate `http://${listener.endpoint.hostname}/`;
+export const frontendURL = pulumi.interpolate `http://${listener.endpoint.hostname}/`;

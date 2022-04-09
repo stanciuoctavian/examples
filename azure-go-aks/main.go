@@ -74,7 +74,7 @@ func main() {
 					Mode:         pulumi.String("System"),
 					OsDiskSizeGB: pulumi.Int(30),
 					Count:        pulumi.Int(3),
-					VmSize:       pulumi.String("Standard_DS2_v2"),
+					VmSize:       pulumi.String("standard_d2ads_v5"),
 					OsType:       pulumi.String("Linux"),
 				},
 			},
@@ -93,7 +93,7 @@ func main() {
 				ClientId: adApp.ApplicationId,
 				Secret:   adSpPassword.Value,
 			},
-			KubernetesVersion: pulumi.String("1.22.2"),
+			KubernetesVersion: pulumi.String("1.22.4"),
 		})
 		if err != nil {
 			return err

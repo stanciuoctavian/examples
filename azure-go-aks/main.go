@@ -73,7 +73,7 @@ func main() {
 					Name:         pulumi.String("agentpool"),
 					Mode:         pulumi.String("System"),
 					OsDiskSizeGB: pulumi.Int(30),
-					Count:        pulumi.Int(3),
+					Count:        pulumi.Int(2),
 					VmSize:       pulumi.String("standard_d2ads_v5"),
 					OsType:       pulumi.String("Linux"),
 				},
